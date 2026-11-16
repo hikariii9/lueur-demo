@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" role="img" aria-labelledby="t d">
+  <title id="t">Illustration de chaîne argentée</title><desc id="d">Dessin vectoriel temporaire sur fond ivoire, pas une photo produit.</desc>
+  <defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#e9dfce"/><stop offset="1" stop-color="#d4c7b0"/></linearGradient><linearGradient id="s"><stop stop-color="#737b7e"/><stop offset=".25" stop-color="#fff"/><stop offset=".5" stop-color="#9ca4a6"/><stop offset=".76" stop-color="#f8f8f5"/><stop offset="1" stop-color="#798183"/></linearGradient></defs>
+  <rect width="640" height="640" rx="4" fill="url(#bg)"/><rect x="22" y="22" width="596" height="596" fill="none" stroke="#b5a688" stroke-opacity=".55"/>
+  <path d="M132 157c20 177 94 300 188 300s168-123 188-300" fill="none" stroke="#667074" stroke-opacity=".14" stroke-width="8" transform="translate(0 8)"/><path d="M132 157c20 177 94 300 188 300s168-123 188-300" fill="none" stroke="url(#s)" stroke-width="6"/>
+  <g fill="none" stroke="url(#s)" stroke-width="4"><ellipse cx="168" cy="279" rx="7" ry="12" transform="rotate(-18 168 279)"/><ellipse cx="191" cy="341" rx="7" ry="12" transform="rotate(-23 191 341)"/><ellipse cx="224" cy="392" rx="7" ry="12" transform="rotate(-30 224 392)"/><ellipse cx="472" cy="279" rx="7" ry="12" transform="rotate(18 472 279)"/><ellipse cx="449" cy="341" rx="7" ry="12" transform="rotate(23 449 341)"/><ellipse cx="416" cy="392" rx="7" ry="12" transform="rotate(30 416 392)"/></g>
+</svg>

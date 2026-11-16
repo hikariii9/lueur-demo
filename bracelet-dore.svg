@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" role="img" aria-labelledby="t d">
+  <title id="t">Illustration de bracelet doré</title><desc id="d">Dessin vectoriel temporaire sur fond ivoire, pas une photo produit.</desc>
+  <defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#e9dfce"/><stop offset="1" stop-color="#d4c7b0"/></linearGradient><linearGradient id="g"><stop stop-color="#8b6634"/><stop offset=".25" stop-color="#f1dfa9"/><stop offset=".52" stop-color="#b78d4e"/><stop offset=".78" stop-color="#f7e8be"/><stop offset="1" stop-color="#94703a"/></linearGradient></defs>
+  <rect width="640" height="640" rx="4" fill="url(#bg)"/><rect x="22" y="22" width="596" height="596" fill="none" stroke="#b5a688" stroke-opacity=".55"/>
+  <ellipse cx="320" cy="336" rx="154" ry="98" fill="none" stroke="#7c6039" stroke-opacity=".16" stroke-width="24"/><ellipse cx="320" cy="325" rx="154" ry="98" fill="none" stroke="url(#g)" stroke-width="17"/><circle cx="472" cy="325" r="12" fill="url(#g)" stroke="#f7e8be" stroke-width="3"/><path d="M458 320l-18-5" stroke="#987444" stroke-width="5" stroke-linecap="round"/>
+</svg>

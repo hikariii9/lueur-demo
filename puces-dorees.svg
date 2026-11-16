@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" role="img" aria-labelledby="t d">
+  <title id="t">Illustration de puces dorées</title><desc id="d">Dessin vectoriel temporaire sur fond ivoire, pas une photo produit.</desc>
+  <defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#e9dfce"/><stop offset="1" stop-color="#d4c7b0"/></linearGradient><radialGradient id="g" cx=".32" cy=".25"><stop stop-color="#fff0c4"/><stop offset=".4" stop-color="#d8b875"/><stop offset="1" stop-color="#94713d"/></radialGradient></defs>
+  <rect width="640" height="640" rx="4" fill="url(#bg)"/><rect x="22" y="22" width="596" height="596" fill="none" stroke="#b5a688" stroke-opacity=".55"/>
+  <circle cx="246" cy="322" r="70" fill="#8d6b3b" opacity=".14"/><circle cx="246" cy="309" r="66" fill="url(#g)"/><circle cx="246" cy="309" r="47" fill="none" stroke="#f3e4b9" stroke-width="2" opacity=".8"/>
+  <path d="M384 239l82 70-82 70-82-70z" fill="#8d6b3b" opacity=".14" transform="translate(0 13)"/><path d="M384 239l82 70-82 70-82-70z" fill="url(#g)"/><path d="M384 255l64 54-64 54-64-54z" fill="none" stroke="#f3e4b9" stroke-width="2" opacity=".8"/>
+</svg>
