@@ -41,14 +41,22 @@
           <p>Ces fiches montrent la future organisation de la boutique. Les illustrations sont des dessins temporaires, pas des photos des produits à vendre.</p>
         </div>
         <div class="category-bar" role="group" aria-label="Filtrer par catégorie">
-          <button class="category-filter is-active" type="button" data-filter="tous">Tout voir <span>12</span></button>
+          <button class="category-filter is-active" type="button" data-filter="tous">Tout voir <span id="all-count">12</span></button>
           <button class="category-filter" type="button" data-filter="boucles">Boucles d’oreilles</button>
           <button class="category-filter" type="button" data-filter="colliers">Colliers</button>
           <button class="category-filter" type="button" data-filter="bracelets">Bracelets</button>
           <button class="category-filter" type="button" data-filter="bagues">Bagues</button>
+          <button class="category-filter is-active" type="button" data-metal-filter="tous">Tous métaux</button>
+          <button class="category-filter" type="button" data-metal-filter="gold">Doré</button>
+          <button class="category-filter" type="button" data-metal-filter="silver">Argenté</button>
+        </div>
+        <div class="catalog-tools">
+          <label class="catalog-search" for="catalog-search">Rechercher un bijou<input id="catalog-search" type="search" placeholder="Ex. créoles, collier…" autocomplete="off"></label>
+          <p id="catalog-count" role="status" aria-live="polite">12 bijoux dans la sélection</p>
         </div>
         <div class="demo-note"><strong>Sélection en préparation.</strong> Aucun prix, avis ou stock n’est inventé. Les articles ne sont pas commandables tant que fournisseur, expédition, photos autorisées et paiement ne sont pas configurés.</div>
         <div class="product-grid" id="product-grid" aria-live="polite"></div>
+        <nav class="pagination" id="catalog-pagination" aria-label="Pages de la sélection"></nav>
       </section>
 
       <section class="brand-story" id="maison">
@@ -61,3 +69,4 @@
     <footer><a class="brand footer-brand" href="index.html"><span class="brand-mark">L</span><span>LUEUR</span></a><p>Prototype de test non marchand · aucun achat ni donnée client collectée</p><a href="#accueil">Retour en haut ↑</a></footer>
   </body>
 </html>
+
