@@ -25,6 +25,7 @@ if (!product) {
   message.append(heading, back);
   detail.append(message);
 } else {
+  const productReady = window.LUEUR_PRODUCT_READY(product);
   document.title = `${product.name} — Lueur`;
   document.querySelector('#breadcrumb-name').textContent = product.name;
 
@@ -32,9 +33,9 @@ if (!product) {
   imagePanel.className = 'detail-photo';
   const image = document.createElement('img');
   image.src = product.image;
-  image.alt = `Illustration temporaire de maquette pour ${product.name}`;
+  image.alt = product.imageAuthorized ? product.name : `Illustration temporaire de maquette pour ${product.name}`;
   const imageNote = document.createElement('span');
-  imageNote.textContent = 'Illustration temporaire';
+  imageNote.textContent = product.imageAuthorized ? product.finish : 'Illustration temporaire';
   imagePanel.append(image, imageNote);
 
   const info = document.createElement('section');
@@ -52,19 +53,22 @@ if (!product) {
   const availability = document.createElement('div');
   availability.className = 'availability';
   const availabilityTitle = document.createElement('strong');
-  availabilityTitle.textContent = 'Fiche produit en préparation';
+  availabilityTitle.textContent = productReady ? 'Fiche fournisseur vérifiée' : 'Fiche produit en préparation';
   const availabilityText = document.createElement('p');
-  availabilityText.textContent = 'La commande sera ouverte après confirmation du fournisseur, des caractéristiques, du stock, du tarif et de la livraison en France.';
+  availabilityText.textContent = productReady
+    ? 'Le produit et son tarif sont renseignés. Les commandes restent fermées tant que le paiement sécurisé et les informations de vente ne sont pas activés.'
+    : 'La commande sera ouverte après confirmation du fournisseur, des caractéristiques, du stock, du tarif et de la livraison en France.';
   availability.append(availabilityTitle, availabilityText);
   const description = document.createElement('p');
   description.className = 'detail-description';
   description.textContent = product.description;
   const specs = document.createElement('dl');
   specs.className = 'spec-list';
-  addTextRow(specs, 'Finition envisagée', product.finish);
-  addTextRow(specs, 'Matière', 'À confirmer avant publication');
-  addTextRow(specs, 'Référence fournisseur', 'Non attribuée');
-  addTextRow(specs, 'Prix et livraison', 'À confirmer');
+  addTextRow(specs, 'Finition', product.finish || 'À confirmer avant publication');
+  addTextRow(specs, 'Matière', product.material || 'À confirmer avant publication');
+  if (product.dimensions) addTextRow(specs, 'Dimensions', product.dimensions);
+  if (productReady) addTextRow(specs, 'Prix', window.LUEUR_EURO(product.salePrice));
+  else addTextRow(specs, 'Prix', 'À confirmer');
   const back = document.createElement('a');
   back.className = 'button button-gold';
   back.href = 'index.html#collection';
@@ -72,3 +76,4 @@ if (!product) {
   info.append(eyebrow, title, short, availability, description, specs, back);
   detail.append(imagePanel, info);
 }
+
